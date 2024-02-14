@@ -1,0 +1,31 @@
+@use '../util' as u;
+
+.header {
+  margin-block-start: u.rem(20);
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: u.rem(20) u.rem(25);
+
+    @media (min-width: u.rem(600)) {
+      justify-content: flex-start;
+      align-items: center;
+      text-align: left;
+      gap: u.rem(32);
+    }
+  }
+  &__home {
+    font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+    line-height: 1;
+    color: var(--c-white-text);
+    text-decoration: none;
+    flex: 1 0 100%;
+
+    @media (min-width: u.rem(600)) {
+      flex: 1;
+      margin-inline-end: auto;
+    }
+  }
+}

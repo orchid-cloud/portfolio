@@ -1,0 +1,66 @@
+@use 'util' as u;
+
+:root {
+  //colors
+
+  --c-black-bg: #151515;
+  --c-gray-contact: #242424;
+  --c-accent: #4ee1a0;
+  --c-gray-text: #d9d9d9;
+  --c-white-text: #fff;
+  --c-invalid: #ff6f5b;
+
+  //font size
+  --fs-body: #{u.rem(18)};
+  --fs-xxl: #{u.rem(88)};
+  --fs-xl: #{u.rem(72)};
+  --fs-l: #{u.rem(48)};
+  --fs-m: #{u.rem(40)};
+  --fs-s: #{u.rem(32)};
+
+  //content width
+  --container: u.rem(1110);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: var(--fs-body);
+  line-height: 1.56;
+  background-color: var(--c-black-bg);
+  color: var(--c-white-text);
+}
+
+.wrapper {
+  width: calc(100% - u.rem(32));
+  max-width: var(--container);
+  margin-inline: auto;
+
+  @media (min-width: u.rem(600)) {
+    width: calc(100% - u.rem(60));
+  }
+}
+
+a {
+  transition: color 250ms ease-in-out;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
