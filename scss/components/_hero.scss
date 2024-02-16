@@ -1,0 +1,25 @@
+@use '../util' as u;
+
+.hero {
+  &__wrapper {
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    display: block;
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: u.rem(335);
+    position: relative;
+  }
+
+  &__description {
+  }
+
+  &__contact {
+  }
+}
