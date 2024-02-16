@@ -61,15 +61,8 @@ p {
 h1 {
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
-  margin-block-end: u.rem(24);
 
-  @media (min-width: u.rem(600)) {
-    margin-block-end: u.rem(60);
-  }
-
-  @media (min-width: u.rem(600)) {
-    margin-block-end: u.rem(43);
-  }
+  line-height: 1.1;
 }
 
 .wrapper {
