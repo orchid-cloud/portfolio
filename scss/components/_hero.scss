@@ -2,6 +2,8 @@
 
 .hero {
   &__wrapper {
+    padding-block-end: u.rem(80);
+    border-bottom: 1px solid var(--c-gray-text);
   }
   &__image {
     position: absolute;
@@ -15,6 +17,26 @@
     text-align: center;
     margin-top: u.rem(335);
     position: relative;
+  }
+
+  &__rings {
+  }
+
+  &__circle {
+  }
+  
+
+  &__headline {
+    & > span {
+      background-image: linear-gradient(
+        to right,
+        var(--c-accent) 75%,
+        var(--c-accent) 75%
+      );
+      background-position: 0 1.18em;
+      background-repeat: repeat-x;
+      background-size: u.rem(8) u.rem(4);
+    }
   }
 
   &__description {

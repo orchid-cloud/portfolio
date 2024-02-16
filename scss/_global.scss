@@ -40,6 +40,8 @@ body {
   line-height: 1.56;
   background-color: var(--c-black-bg);
   color: var(--c-white-text);
+
+  padding-block-end: 200px;
 }
 
 h1,
@@ -50,12 +52,24 @@ p {
 }
 
 p {
+  font-size: u.rem(16);
   line-height: 1.5;
+  font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
+  color: var(--c-gray-text);
 }
 
 h1 {
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+  margin-block-end: u.rem(24);
+
+  @media (min-width: u.rem(600)) {
+    margin-block-end: u.rem(60);
+  }
+
+  @media (min-width: u.rem(600)) {
+    margin-block-end: u.rem(43);
+  }
 }
 
 .wrapper {
@@ -70,6 +84,26 @@ h1 {
 
 a {
   transition: color 250ms ease-in-out;
+}
+
+a.underline {
+  display: inline-block;
+  padding-block-end: u.rem(10);
+  font-size: u.rem(16);
+  line-height: 1.625;
+  letter-spacing: u.rem(2.3);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--c-white-text);
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    var(--c-accent) 75%,
+    var(--c-accent) 75%
+  );
+  background-position: 0 u.em(34);
+  background-repeat: repeat-x;
+  background-size: u.rem(8) u.rem(2);
 }
 
 .visually-hidden {
