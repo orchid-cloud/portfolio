@@ -1,6 +1,11 @@
 @use '../util' as u;
 
 .hero {
+  @media (min-width: u.rem(600)) {
+    position: relative;
+
+    margin-block-start: u.rem(-62);
+  }
   &__wrapper {
     padding-block-end: u.rem(80);
     border-bottom: 1px solid var(--c-gray-text);
@@ -8,20 +13,45 @@
     @media (min-width: u.rem(600)) {
       padding-block-end: u.rem(60);
     }
+
+    @media (min-width: u.rem(1000)) {
+      position: relative;
+    }
+  }
+
+  &__content {
+    @media (min-width: u.rem(600)) {
+      display: flex;
+      // overflow-x: hidden;
+      align-items: center;
+    }
+    & picture {
+      order: 2;
+    }
   }
   &__image {
     position: absolute;
     top: 0;
     left: 50%;
     translate: -50%;
-    display: block;
+    // display: block;
+    width: u.rem(174);
+    height: auto;
 
     @media (min-width: u.rem(600)) {
-      width: u.rem(322);
+      position: relative;
+      width: 42vw;
+      max-width: u.rem(445);
+      // width: u.rem(322);
       height: auto;
       left: auto;
       right: 0;
       translate: 0;
+    }
+    @media (min-width: u.rem(1000)) {
+      // max-width: u.rem(445);
+      width: u.rem(445);
+      // translate: 0 u.rem(-199);
     }
   }
 
@@ -29,11 +59,15 @@
     text-align: center;
     margin-block-start: u.rem(335);
     position: relative;
+    z-index: 1;
 
     @media (min-width: u.rem(600)) {
-      width: 62vw;
+      // width: 62vw;
+      margin-block-start: u.rem(90);
+      margin-inline-end: u.rem(-30);
+      flex: 1 0 58vw;
       text-align: left;
-      margin-block-start: 0;
+      z-index: 1;
     }
   }
 
@@ -42,9 +76,13 @@
     right: 50%;
     top: u.rem(130);
     z-index: -1;
+    height: auto;
 
     @media (min-width: u.rem(600)) {
-      top: u.rem(85);
+      top: u.rem(90);
+      right: auto;
+      left: 0;
+      translate: -50%;
     }
   }
 
@@ -55,7 +93,14 @@
     translate: 50%;
 
     @media (min-width: u.rem(600)) {
-      top: u.rem(468);
+      top: auto;
+      bottom: u.rem(70);
+      z-index: 1;
+    }
+
+    @media (min-width: u.rem(1000)) {
+      top: u.rem(322);
+      right: u.rem(445);
     }
   }
 
@@ -96,10 +141,12 @@
 
     @media (min-width: u.rem(600)) {
       margin-block-end: u.rem(34);
+      // width: 70%;
     }
 
     @media (min-width: u.rem(1000)) {
       margin-block-end: u.rem(66);
+      width: 38ch;
     }
   }
 

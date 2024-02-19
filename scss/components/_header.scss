@@ -4,6 +4,14 @@
   position: relative;
   z-index: 1;
   margin-block-start: u.rem(20);
+
+  @media (min-width: u.rem(600)) {
+    // margin-block-end: u.rem(90);
+  }
+
+  @media (min-width: u.rem(1000)) {
+    margin-block: u.rem(40) u.rem(127);
+  }
   &__nav {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +24,10 @@
       align-items: center;
       text-align: left;
       gap: u.rem(32);
-      margin-block-end: u.rem(90);
+    }
+
+    @media (min-width: u.rem(1000)) {
+      padding-inline-end: u.rem(30);
     }
   }
   &__home {
@@ -27,7 +38,7 @@
     flex: 1 0 100%;
 
     @media (min-width: u.rem(600)) {
-      flex: 1;
+      flex: 0 1 auto;
       margin-inline-end: auto;
     }
   }

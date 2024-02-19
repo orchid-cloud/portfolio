@@ -58,47 +58,49 @@
     <main class="main">
       <section class="hero">
         <div class="wrapper hero__wrapper">
-          <picture>
-            <source
-              media="(min-width: 62.5em)"
-              srcset="/public/images/image-profile-desktop.webp"
-            />
-            <source
-              media="(min-width: 37.5em)"
-              srcset="/public/images/image-profile-tablet.webp"
+          <div class="hero__content">
+            <picture>
+              <source
+                media="(min-width: 62.5em)"
+                srcset="/public/images/image-profile-desktop.webp"
+              />
+              <source
+                media="(min-width: 37.5em)"
+                srcset="/public/images/image-profile-tablet.webp"
+              />
+              <img
+                class="hero__image"
+                src="/public/images/image-profile-mobile.webp"
+                alt="picture of Adam Keyes"
+                width-="174"
+                height="383"
+              />
+            </picture>
+            <img
+              class="hero__rings"
+              src="/public/images/pattern-rings.svg"
+              alt=""
+              width="530"
+              height="129"
             />
             <img
-              class="hero__image"
-              src="/public/images/image-profile-mobile.webp"
-              alt="picture of Adam Keyes"
-              width-="174"
-              height="383"
+              class="hero__circle"
+              src="/public/images/pattern-circle.svg"
+              alt=""
+              width="129"
+              height="129"
             />
-          </picture>
-          <img
-            class="hero__rings"
-            src="/public/images/pattern-rings.svg"
-            alt=""
-            width="530"
-            height="129"
-          />
-          <img
-            class="hero__circle"
-            src="/public/images/pattern-circle.svg"
-            alt=""
-            width="129"
-            height="129"
-          />
-          <div class="hero__text">
-            <h1 class="hero__headline">
-              Nice to<br />
-              meet you! I'm <span>Adam Keyes</span>.
-            </h1>
-            <p class="hero__description">
-              Based in the UK, I'm a front-end developer passionate about
-              building accessible web apps that users love.
-            </p>
-            <a href="" class="hero__contact underline">Contact info</a>
+            <div class="hero__text">
+              <h1 class="hero__headline">
+                Nice to<br />
+                meet you! I'm <span>Adam Keyes</span>.
+              </h1>
+              <p class="hero__description">
+                Based in the UK, I'm a front-end developer passionate about
+                building accessible web apps that users love.
+              </p>
+              <a href="" class="hero__contact underline">Contact info</a>
+            </div>
           </div>
         </div>
       </section>
