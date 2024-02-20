@@ -108,3 +108,7 @@ a.underline {
   height: 1px;
   overflow: hidden;
 }
+
+.bottom-border {
+  border-bottom: 1px solid var(--c-gray-text);
+}
