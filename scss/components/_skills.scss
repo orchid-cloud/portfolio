@@ -7,10 +7,21 @@
     grid-template-columns: 1fr;
     gap: u.rem(25);
     padding-block: u.rem(40);
+
+    @media (min-width: u.rem(600)) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: u.rem(52) u.rem(24);
+      border: none;
+      padding-block: u.rem(52) 0;
+    }
   }
 
   &__item {
     text-align: center;
+
+    @media (min-width: u.rem(600)) {
+      text-align: left;
+    }
   }
 
   &__title {
@@ -25,5 +36,9 @@
     bottom: 0;
     left: 50%;
     translate: 0 50%;
+
+    @media (min-width: u.rem(600)) {
+      translate: 40% 50%;
+    }
   }
 }
