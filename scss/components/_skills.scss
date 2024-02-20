@@ -14,6 +14,12 @@
       border: none;
       padding-block: u.rem(52) 0;
     }
+
+    @media (min-width: u.rem(1000)) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: u.rem(58) u.rem(30);
+      padding-block-start: u.rem(72);
+    }
   }
 
   &__item {
@@ -31,6 +37,10 @@
     margin-block-end: u.rem(2);
   }
 
+  &__description {
+    margin-block-end: 0;
+  }
+
   &__rings {
     position: absolute;
     bottom: 0;
@@ -39,6 +49,11 @@
 
     @media (min-width: u.rem(600)) {
       translate: 40% 50%;
+    }
+
+    @media (min-width: u.rem(1000)) {
+      left: 100%;
+      translate: -40% 50%;
     }
   }
 }
