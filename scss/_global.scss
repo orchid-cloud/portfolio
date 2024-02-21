@@ -17,6 +17,7 @@
   --fs-l: #{u.rem(48)};
   --fs-m: #{u.rem(40)};
   --fs-s: #{u.rem(32)};
+  --fs-xs: #{u.rem(24)};
 
   //content width
   --container: #{u.rem(1110)};
@@ -59,7 +60,7 @@ p {
   color: var(--c-gray-text);
 }
 
-h1 {
+.header-xl {
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
   letter-spacing: -0.028em;
@@ -98,6 +99,11 @@ a.underline {
   background-position: 0 u.em(34);
   background-repeat: repeat-x;
   background-size: u.rem(8) u.rem(2);
+}
+
+img,
+svg {
+  display: block;
 }
 
 .visually-hidden {

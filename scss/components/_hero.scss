@@ -12,7 +12,6 @@
   }
   &__wrapper {
     padding-block-end: u.rem(80);
-    
 
     @media (min-width: u.rem(600)) {
       padding-block-end: u.rem(60);
@@ -47,7 +46,6 @@
     top: 0;
     left: 50%;
     translate: -50%;
-    // display: block;
     width: u.rem(174);
     height: auto;
 
@@ -55,7 +53,6 @@
       position: relative;
       width: 42vw;
       max-width: u.rem(445);
-      // width: u.rem(322);
       height: auto;
       left: auto;
       right: 0;
@@ -108,14 +105,17 @@
   }
 
   &__circle {
-    position: absolute;
-    top: u.rem(254);
-    right: 0;
-    translate: 50%;
+    position: relative;
+    top: u.rem(171);
+    margin-bottom: u.rem(-129);
+    translate: calc(100vw - 64px - 16px);
 
     @media (min-width: u.rem(600)) {
+      position: absolute;
       top: auto;
-      bottom: u.rem(70);
+      right: 0;
+      bottom: u.rem(190);
+      translate: 50%;
       z-index: 1;
     }
 
