@@ -81,6 +81,11 @@ a {
   transition: color 250ms ease-in-out;
 }
 
+a:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 2px;
+}
+
 a.underline {
   display: inline-block;
   padding-block-end: u.rem(10);
