@@ -1,0 +1,60 @@
+@use '../util' as u;
+
+.contact {
+  &__wrapper {
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__form {
+  }
+
+  &__control {
+    & input {
+      width: 100%;
+      padding-block: u.rem(16);
+      padding-inline: u.rem(24);
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--c-white-text);
+      color: var(--c-white-text);
+
+      &::placeholder {
+        font-size: 1rem;
+        line-height: 1;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+    }
+
+    & textarea {
+      width: 100%;
+      padding-block: u.rem(16);
+      padding-inline: u.rem(24);
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--c-white-text);
+      color: var(--c-white-text);
+      margin-block-end: u.rem(32);
+
+      &::placeholder {
+        font-size: 1rem;
+        line-height: 1;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+    }
+
+    & button {
+      background-color: transparent;
+      border: none;
+    }
+
+    &.align-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

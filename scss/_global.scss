@@ -34,6 +34,12 @@ html {
   box-sizing: inherit;
 }
 
+input,
+textarea,
+button {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;
@@ -81,12 +87,20 @@ a {
   transition: color 250ms ease-in-out;
 }
 
-a:focus-visible {
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
   outline: 2px solid var(--c-accent);
   outline-offset: 2px;
 }
 
-a.underline {
+input:invalid,
+textarea:invalid {
+  outline-color: var(--c-invalid);
+}
+
+a.underline,
+button {
   display: inline-block;
   padding-block-end: u.rem(10);
   font-size: u.rem(16);
@@ -104,6 +118,10 @@ a.underline {
   background-position: 0 u.em(34);
   background-repeat: repeat-x;
   background-size: u.rem(8) u.rem(2);
+}
+
+a:hover {
+  color: var(--c-accent);
 }
 
 img,
