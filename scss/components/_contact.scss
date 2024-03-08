@@ -1,17 +1,57 @@
 @use '../util' as u;
 
 .contact {
+  position: relative;
+  background-color: var(--c-gray-bg);
   &__wrapper {
+    padding-block: u.rem(84);
+    @media (min-width: u.rem(1000)) {
+      display: grid;
+      grid-template-columns: repeat(2, u.rem(445));
+      justify-content: space-between;
+    }
+    @media (max-width: u.rem(1000)) {
+      max-width: u.rem(445);
+    }
   }
 
   &__text {
-    text-align: center;
+    @media (max-width: u.rem(1000)) {
+      text-align: center;
+    }
+  }
+
+  &__headline {
+    margin-block-end: u.rem(20);
+
+    @media (min-width: u.rem(1000)) {
+      margin-block-end: u.rem(36);
+    }
   }
 
   &__form {
   }
 
+  &__rings {
+    position: absolute;
+    left: 0;
+    bottom: 97px;
+    translate: -75%;
+
+    @media (min-width: u.rem(600)) {
+      bottom: 47px;
+      translate: -75%;
+    }
+
+    @media (min-width: u.rem(1000)) {
+      bottom: 47px;
+      translate: -40%;
+    }
+  }
+
   &__control {
+    position: relative;
+    margin-block-end: u.rem(32);
     & input {
       width: 100%;
       padding-block: u.rem(16);
@@ -27,6 +67,10 @@
         text-transform: uppercase;
         opacity: 0.5;
       }
+
+      // &:focus-visible:invalid ~ .contact__invalid-icon {
+      //   display: inline-block;
+      // }
     }
 
     & textarea {
@@ -37,7 +81,7 @@
       border: none;
       border-bottom: 1px solid var(--c-white-text);
       color: var(--c-white-text);
-      margin-block-end: u.rem(32);
+      // margin-block-end: u.rem(32);
 
       &::placeholder {
         font-size: 1rem;
@@ -57,4 +101,23 @@
       justify-content: flex-end;
     }
   }
+
+  &__invalid-icon {
+    display: none;
+    position: absolute;
+    width: u.rem(24);
+    height: u.rem(24);
+    // top: 50%;
+    right: 0;
+    translate: -50% 50%;
+
+    .contact input:focus-visible:invalid,
+    .contact textarea:focus-visible:invalid ~ & {
+      display: inline-block;
+    }
+  }
 }
+
+// .contact input:focus-visible:invalid ~ .contact__invalid-icon {
+//   display: inline-block;
+// }
