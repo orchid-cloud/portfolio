@@ -101,7 +101,9 @@
                 Based in the UK, I'm a front-end developer passionate about
                 building accessible web apps that users love.
               </p>
-              <a href="" class="hero__contact underline">Contact info</a>
+              <a href="#contact" class="hero__contact underline"
+                >Contact info</a
+              >
             </div>
           </div>
         </div>
@@ -153,7 +155,9 @@
         <div class="wrapper projects__wrapper">
           <div class="projects__grid">
             <h2 class="projects__headline header-xl">Projects</h2>
-            <a href="" class="projects__contact underline">Contact info</a>
+            <a href="#contact" class="projects__contact underline"
+              >Contact info</a
+            >
             <div class="projects__item">
               <picture>
                 <source
@@ -259,7 +263,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="wrapper contact__wrapper bottom-border">
           <div class="contact__text">
             <h2 class="contact__headline header-xl">Contact</h2>
@@ -337,7 +341,49 @@
         />
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <h2 class="visually-hidden">Header</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="/" class="header__home">
+            adamkeyes
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+          <a href="" class="header__social"
+            ><img
+              src="/public/images/icon-github.svg"
+              alt="GitHub"
+              width="24px"
+              height="24px"
+          /></a>
+
+          <a href="" class="header__social"
+            ><img
+              src="/public/images/icon-frontend-mentor.svg"
+              alt="Frontend mentor"
+              width="24px"
+              height="22px"
+          /></a>
+
+          <a href="" class="header__social"
+            ><img
+              src="/public/images/icon-linkedin.svg"
+              alt="LinkedIn"
+              width="24px"
+              height="24px"
+          /></a>
+
+          <a href="" class="header__social"
+            ><img
+              src="/public/images/icon-twitter.svg"
+              alt="Twitter"
+              width="23px"
+              height="19px"
+          /></a>
+        </nav>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
