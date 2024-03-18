@@ -108,17 +108,12 @@
     position: absolute;
     width: u.rem(24);
     height: u.rem(24);
-    // top: 50%;
     right: 0;
     translate: -50% 50%;
 
-    .contact input:focus-visible:invalid,
+    .contact input:focus-visible:invalid ~ &,
     .contact textarea:focus-visible:invalid ~ & {
       display: inline-block;
     }
   }
 }
-
-// .contact input:focus-visible:invalid ~ .contact__invalid-icon {
-//   display: inline-block;
-// }
