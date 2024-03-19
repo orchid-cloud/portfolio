@@ -114,6 +114,10 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-block-end: u.rem(7);
+
+    @media (min-width: u.rem(600)) {
+      text-align: left;
+    }
   }
 
   &__tags {
@@ -125,6 +129,7 @@
 
     @media (min-width: u.rem(600)) {
       display: block;
+      text-align: left;
       & span {
         margin-inline-end: u.rem(18);
       }
