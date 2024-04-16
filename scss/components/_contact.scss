@@ -2,7 +2,7 @@
 
 .contact {
   position: relative;
-  background-color: var(--c-gray-bg);
+  // background-color: var(--c-gray-bg);
   &__wrapper {
     padding-block: u.rem(84);
     @media (min-width: u.rem(1000)) {
@@ -29,8 +29,8 @@
     }
   }
 
-  &__form {
-  }
+  // &__form {
+  // }
 
   &__rings {
     position: absolute;
@@ -67,6 +67,10 @@
         text-transform: uppercase;
         opacity: 0.5;
       }
+
+      // &:invalid {
+      //   outline-color: var(--c-invalid);
+      // }
 
       // &:focus-visible:invalid ~ .contact__invalid-icon {
       //   display: inline-block;
@@ -111,9 +115,9 @@
     right: 0;
     translate: -50% 50%;
 
-    .contact input:focus-visible:invalid ~ &,
-    .contact textarea:focus-visible:invalid ~ & {
-      display: inline-block;
-    }
+    // .contact input:focus-visible:invalid ~ &,
+    // .contact textarea:focus-visible:invalid ~ & {
+    //   display: inline-block;
+    // }
   }
 }

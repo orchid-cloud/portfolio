@@ -11,7 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title></title>
+    <title>Natalia Zaidenberg</title>
+    <script defer type="module" src="/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -314,13 +315,13 @@
         <div class="wrapper contact__wrapper bottom-border">
           <div class="contact__text">
             <h2 class="contact__headline header-xl">Contact</h2>
-            <p class="contact__description">
+            <!-- <p class="contact__description">
               I would love to hear about your project and how I could help.
               Please fill in the form, and I'll get back to you as soon as
               possible.
-            </p>
+            </p> -->
           </div>
-          <form action="" class="contact__form">
+          <form id="form" action="" class="contact__form" netlify>
             <div class="contact__control">
               <label for="name" class="visually-hidden">Name</label>
               <input
@@ -328,7 +329,7 @@
                 id="name"
                 name="name"
                 placeholder="Name"
-                required
+                maxlength="40"
               />
               <img
                 src="/public/images/icon-invalid.svg"
@@ -340,13 +341,7 @@
             </div>
             <div class="contact__control">
               <label for="email" class="visually-hidden">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required
-              />
+              <input type="email" id="email" name="email" placeholder="Email" />
               <img
                 src="/public/images/icon-invalid.svg"
                 alt=""
@@ -363,7 +358,6 @@
                 cols="30"
                 rows="3"
                 placeholder="Message"
-                required
               ></textarea>
               <img
                 src="/public/images/icon-invalid.svg"

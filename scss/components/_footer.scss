@@ -1,7 +1,7 @@
 @use '../util' as u;
 
 .footer {
-  background-color: var(--c-gray-bg);
+  // background-color: var(--c-gray-bg);
   padding-block: u.rem(40) u.rem(60);
 
   @media (min-width: u.rem(600)) {

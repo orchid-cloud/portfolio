@@ -93,9 +93,13 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-input:invalid,
-textarea:invalid {
-  outline-color: var(--c-invalid);
+// input:invalid,
+// textarea:invalid {
+//   outline-color: var(--c-invalid);
+// }
+
+.outline-invalid {
+  outline: 2px solid var(--c-invalid);
 }
 
 a.underline,
