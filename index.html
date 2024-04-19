@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +12,99 @@
     <link rel="stylesheet" href="style.css" />
     <title>Natalia Zaidenberg</title>
     <script defer type="module" src="/main.js"></script>
+
+    <style>
+          body {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            color: #fff;;
+            background-color: #242424;;
+          }
+
+          .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px;
+          }
+          .wrapper {
+            width: calc(100% - 32px);
+            margin-inline: auto;
+          }
+
+        .visually-hidden {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+          }
+
+        .bottom-border {
+            border-bottom: 1px solid #d9d9d9;;
+          }
+
+        .header {
+          margin-block-start: 20px;
+          }
+
+        .header-xl {
+          font-size: 40px;
+          font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+          letter-spacing: -0.028em;
+          line-height: 1.1;
+          }
+
+        .header__nav {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px 25px;
+          }
+
+        .hero {
+          margin-block-start: 62px;
+        }
+
+        .hero__wrapper {
+          padding-block-end: 5rem;
+        }
+
+        .hero__rings {
+          position: absolute;
+          right: 50%;
+          top: 130px;
+          z-index: -1;
+          height: auto;
+         }
+
+        .hero__headline {
+          font-size: 40px;
+          margin-block-end: 40px;
+          text-align: center;
+        }
+
+        .hero__headline > span {
+        background-image: linear-gradient(
+          to right,
+          #4ee1a0 75%,
+          #4ee1a0 75%
+        );
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        background-size: 8px 4px;
+      }
+
+        .skills__item {
+          text-align: center;
+        }
+
+        .skills__title {
+        font-size: 2rem;
+        line-height: 1.17;
+        margin-block-end: 2px;
+        }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -20,10 +112,6 @@
       <div class="wrapper">
         <nav class="header__nav">
           <h2 class="visually-hidden">Navigation</h2>
-          <!-- <a href="/" class="header__home">
-            adamkeyes
-            <span class="visually-hidden">(to home page)</span>
-          </a> -->
           <a
             href="https://github.com/orchid-cloud"
             class="header__social"
@@ -34,15 +122,6 @@
               width="24px"
               height="24px"
           /></a>
-
-          <!-- <a href="" class="header__social"
-            ><img
-              src="/public/images/icon-frontend-mentor.svg"
-              alt="Frontend mentor"
-              width="24px"
-              height="22px"
-          /></a> -->
-
           <a
             href="https://linkedin.com/in/natalia-zaidenberg-262417303"
             class="header__social"
@@ -53,14 +132,6 @@
               width="24px"
               height="24px"
           /></a>
-
-          <!-- <a href="" class="header__social"
-            ><img
-              src="/public/images/icon-twitter.svg"
-              alt="Twitter"
-              width="23px"
-              height="19px"
-          /></a> -->
         </nav>
       </div>
     </header>
@@ -68,48 +139,17 @@
       <section class="hero">
         <div class="wrapper hero__wrapper bottom-border">
           <div class="hero__content">
-            <!-- <picture>
-              <source
-                media="(min-width: 62.5em)"
-                srcset="/public/images/image-profile-desktop.webp"
-              />
-              <source
-                media="(min-width: 37.5em)"
-                srcset="/public/images/image-profile-tablet.webp"
-              />
-              <img
-                class="hero__image"
-                src="/public/images/image-profile-mobile.webp"
-                alt="picture of Adam Keyes"
-                width-="174"
-                height="383"
-              />
-            </picture> -->
             <img
               class="hero__rings"
-              src="/public/images/pattern-rings.svg"
+              src="/images/pattern-rings.svg"
               alt=""
               width="530"
               height="129"
             />
-            <!-- <img
-              class="hero__circle"
-              src="/public/images/pattern-circle.svg"
-              alt=""
-              width="129"
-              height="129"
-            /> -->
             <div class="hero__text">
               <h1 class="hero__headline header-xl">
                 Nice to meet you! I am <span>Natalia Zaidenberg</span>.
               </h1>
-              <p class="hero__description">
-                Currently based in Poland, I'm a junior front-end developer
-                passionate about web development.
-              </p>
-              <!-- <a href="#contact" class="hero__contact underline"
-                >Contact info</a
-              > -->
             </div>
           </div>
         </div>
@@ -120,32 +160,26 @@
           <h2 class="visually-hidden">Skills</h2>
           <div class="skills__item">
             <h3 class="skills__title">HTML</h3>
-            <!-- <p class="skills__description">4 Years Experience</p> -->
           </div>
 
           <div class="skills__item">
             <h3 class="skills__title">CSS</h3>
-            <!-- <p class="skills__description">4 Years Experience</p> -->
           </div>
 
           <div class="skills__item">
             <h3 class="skills__title">JavaScript</h3>
-            <!-- <p class="skills__description">4 Years Experience</p> -->
           </div>
 
           <div class="skills__item">
             <h3 class="skills__title">Accessibility</h3>
-            <!-- <p class="skills__description">4 Years Experience</p> -->
           </div>
 
           <div class="skills__item">
             <h3 class="skills__title">React</h3>
-            <!-- <p class="skills__description">3 Years Experience</p> -->
           </div>
 
           <div class="skills__item">
             <h3 class="skills__title">Sass</h3>
-            <!-- <p class="skills__description">3 Years Experience</p> -->
           </div>
           <img
             class="skills__rings"
@@ -321,11 +355,6 @@
         <div class="wrapper contact__wrapper bottom-border">
           <div class="contact__text">
             <h2 class="contact__headline header-xl">Contact</h2>
-            <!-- <p class="contact__description">
-              I would love to hear about your project and how I could help.
-              Please fill in the form, and I'll get back to you as soon as
-              possible.
-            </p> -->
           </div>
           <form id="form" action="" class="contact__form" netlify>
             <div class="contact__control">
@@ -393,10 +422,6 @@
       <div class="wrapper">
         <nav class="header__nav">
           <h2 class="visually-hidden">Navigation</h2>
-          <!-- <a href="/" class="header__home">
-            adamkeyes
-            <span class="visually-hidden">(to home page)</span>
-          </a> -->
           <a
             href="https://github.com/orchid-cloud"
             class="header__social"
@@ -407,15 +432,6 @@
               width="24px"
               height="24px"
           /></a>
-
-          <!-- <a href="" class="header__social"
-            ><img
-              src="/public/images/icon-frontend-mentor.svg"
-              alt="Frontend mentor"
-              width="24px"
-              height="22px"
-          /></a> -->
-
           <a
             href="https://linkedin.com/in/natalia-zaidenberg-262417303"
             class="header__social"
@@ -426,14 +442,6 @@
               width="24px"
               height="24px"
           /></a>
-
-          <!-- <a href="" class="header__social"
-            ><img
-              src="/public/images/icon-twitter.svg"
-              alt="Twitter"
-              width="23px"
-              height="19px"
-          /></a> -->
         </nav>
       </div>
     </footer>

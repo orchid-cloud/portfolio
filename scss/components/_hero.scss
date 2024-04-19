@@ -28,39 +28,11 @@
       display: flex;
       align-items: center;
     }
-    // & picture {
-    //   order: 2;
-    // }
 
     @media (min-width: u.rem(1000)) {
       align-items: flex-start;
     }
-
-    // & picture {
-    //   margin-inline-start: u.rem(-80);
-    // }
   }
-  // &__image {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 50%;
-  //   translate: -50%;
-  //   width: u.rem(174);
-  //   height: auto;
-
-  //   @media (min-width: u.rem(600)) {
-  //     position: relative;
-  //     width: 42vw;
-  //     max-width: u.rem(445);
-  //     height: auto;
-  //     left: auto;
-  //     right: 0;
-  //     translate: 0;
-  //   }
-  //   @media (min-width: u.rem(1000)) {
-  //     margin-block-start: u.rem(-199);
-  //   }
-  // }
 
   &__text {
     text-align: center;
@@ -68,11 +40,7 @@
     position: relative;
 
     @media (min-width: u.rem(600)) {
-      // width: 62vw;
       margin-block-start: u.rem(90);
-      // margin-inline-end: u.rem(-30);
-      // flex: 1 0 58vw;
-      // text-align: left;
       z-index: 1;
     }
 
@@ -102,27 +70,6 @@
     }
   }
 
-  // &__circle {
-  //   position: relative;
-  //   top: u.rem(171);
-  //   margin-bottom: u.rem(-129);
-  //   translate: calc(100vw - 64px - 16px);
-
-  //   @media (min-width: u.rem(600)) {
-  //     position: absolute;
-  //     top: auto;
-  //     right: 0;
-  //     bottom: u.rem(190);
-  //     translate: 50%;
-  //     z-index: 1;
-  //   }
-
-  //   @media (min-width: u.rem(1000)) {
-  //     top: u.rem(322);
-  //     right: u.rem(445);
-  //   }
-  // }
-
   &__headline {
     margin-block-end: u.rem(40);
     text-align: center;
@@ -136,40 +83,5 @@
       background-repeat: repeat-x;
       background-size: u.rem(8) u.rem(4);
     }
-
-    // & > br {
-    //   display: none;
-    // }
-
-    // @media (min-width: u.rem(600)) {
-    //   margin-block-end: u.rem(60);
-    //   & > br {
-    //     display: inline-block;
-    //   }
-    // }
-
-    // @media (min-width: u.rem(1000)) {
-    //   margin-block-end: u.rem(43);
-    //   & > br {
-    //     display: none;
-    //   }
-    // }
   }
-
-  &__description {
-    margin-block-end: u.rem(24);
-    text-align: center;
-
-    @media (min-width: u.rem(600)) {
-      margin-block-end: u.rem(34);
-    }
-
-    @media (min-width: u.rem(1000)) {
-      margin-block-end: u.rem(66);
-      // width: 38ch;
-    }
-  }
-
-  // &__contact {
-  // }
 }
